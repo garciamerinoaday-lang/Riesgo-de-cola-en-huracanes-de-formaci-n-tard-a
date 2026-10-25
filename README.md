@@ -2,10 +2,6 @@
 
 Estudio exploratorio con **bootstrap** y **teoría de valores extremos (POT/GPD)** sobre las pérdidas de los huracanes atlánticos que alcanzan la categoría de huracán el 1 de octubre o después, con el huracán **Isaias (2026)** como caso motivador.
 
-<p align="center">
-  <img src="figuras/fig3_cola.png" width="720" alt="La cola según cada modelo y los datos de toda la temporada">
-</p>
-
 ## ¿De qué va?
 
 Isaias fue el primer huracán de la temporada atlántica más tardío en más de un siglo, en un año muy tranquilo, y aun así tocó tierra en Florida con pérdidas relevantes. Eventos así son raros: casi no hay antecedentes, pero sus consecuencias pesan mucho en el reaseguro de catástrofes. La pregunta del proyecto es **qué se puede afirmar con honestidad sobre el riesgo de cola cuando la muestra es mínima**.
@@ -73,26 +69,9 @@ source("R/huracanes_tardios_bootstrap.R")
 
 Los parámetros principales (periodo, mes de corte, número de réplicas, umbrales, modo de emparejamiento, cuantil del umbral híbrido) están al principio del script. La semilla es `set.seed(2026)`, con 10 000 réplicas en el bootstrap empírico y 2 000 en los de EVT. La lectura de ~30 ficheros anuales con narrativas es pesada en memoria y puede tardar varios minutos.
 
-### Figuras
-
-Requiere Python ≥ 3.9 con `numpy`, `scipy` y `matplotlib`:
-
-```bash
-python python/figs.py
-```
-
-Las figuras usan núcleos gaussianos (ancho de banda elegido por validación cruzada de la verosimilitud). Las distribuciones bootstrap de las figuras se regeneran en Python con los mismos datos, por lo que su forma coincide con la del script R aunque la semilla no sea idéntica. Los puntos de toda la temporada de la figura de la cola se reconstruyen con datos exactos de la salida de R. `linkedin.py` escribe en una ruta absoluta de salida: ajústala antes de ejecutarlo.
-
 ### Informe
 
 Se compila con XeLaTeX o LuaLaTeX (usa `fontspec`); con pdfLaTeX hay que cambiar el preámbulo como indican los comentarios del `.tex`.
-
-## Galería
-
-| | |
-|---|---|
-| ![Distribución de las pérdidas](figuras/fig1_distribucion.png) | ![Bootstrap](figuras/fig2_bootstrap.png) |
-| ![Estabilidad de ξ](figuras/fig4_estabilidad.png) | ![Comparación del VaR](figuras/fig5_var_comparacion.png) |
 
 ## Limitaciones
 
