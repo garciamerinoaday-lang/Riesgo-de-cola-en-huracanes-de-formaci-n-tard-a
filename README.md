@@ -2,10 +2,6 @@
 
 Estudio exploratorio con **bootstrap** y **teoría de valores extremos (POT/GPD)** sobre las pérdidas de los huracanes atlánticos que alcanzan la categoría de huracán el 1 de octubre o después, con el huracán **Isaias (2026)** como caso motivador.
 
-<p align="center">
-  <img src="figuras/fig3_cola.png" width="720" alt="La cola según cada modelo y los datos de toda la temporada">
-</p>
-
 ## ¿De qué va?
 
 Isaias fue el primer huracán de la temporada atlántica más tardío en más de un siglo, en un año muy tranquilo, y aun así tocó tierra en Florida con pérdidas relevantes. Eventos así son raros: casi no hay antecedentes, pero sus consecuencias pesan mucho en el reaseguro de catástrofes. La pregunta del proyecto es **qué se puede afirmar con honestidad sobre el riesgo de cola cuando la muestra es mínima**.
