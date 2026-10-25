@@ -60,7 +60,3 @@ Los datos son abiertos y **no se incluyen** en el repositorio por tamaño:
 ## Autor
 
 **Aday García Merino**
-
-## Licencia
-
-Pendiente de definir: añade un fichero `LICENSE` (por ejemplo, MIT para el código).
