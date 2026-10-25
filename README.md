@@ -36,7 +36,7 @@ Los detalles, los contrastes de igualdad entre tardíos y resto y las limitacion
 .
 ├── README.md
 ├── R/
-│   └── huracanes_tardios_bootstrap.R   # análisis completo (R base)                  
+│   └── HuracanR.R   # análisis completo (R base)                  
 ├── Informe/
 │   └── InformeHuracanTardio.pdf
 ├── Figuras/
