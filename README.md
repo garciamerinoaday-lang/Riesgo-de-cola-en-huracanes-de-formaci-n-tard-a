@@ -107,7 +107,3 @@ Es un ejercicio **exploratorio**, no un modelo de tarificación ni una estimaci�
 ## Autor
 
 **Aday García Merino**
-
-## Licencia
-
-Pendiente de definir: añade un fichero `LICENSE` (por ejemplo, MIT para el código).
